@@ -48,10 +48,10 @@
 #define ZKPOP_M 1280
 #define ZKPOP_SYMBYTES 32
 #ifndef ZKPOP_N
-#define ZKPOP_N 4
+#define ZKPOP_N 31
 #endif
 #ifndef ZKPOP_TAU
-#define ZKPOP_TAU 64
+#define ZKPOP_TAU 24
 #endif
 #elif KYBER_K == 3
 #define KYBER_ETA1 2
