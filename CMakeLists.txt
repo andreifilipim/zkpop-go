@@ -42,6 +42,7 @@ set(SOURCES
     ${AVX2_DIR}/ntt.h
     ${AVX2_DIR}/log.h
     ${AVX2_DIR}/zkpop.c
+    ${AVX2_DIR}/speed_test.c
 )
 
 # Create object files
@@ -61,3 +62,6 @@ set_target_properties(libzkpop PROPERTIES
     OUTPUT_NAME "zkpop"
     ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
 )
+
+add_executable(speed_test ${AVX2_DIR}/speed_test.c)
+target_link_libraries(speed_test libzkpop)
